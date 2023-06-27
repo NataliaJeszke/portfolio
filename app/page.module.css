@@ -18,6 +18,27 @@
   font-family: var(--font-mono);
 }
 
+.not_found{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+
+.backBtn{
+  border: oldlace;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.backBtn:hover{
+  background-color: #f5f5f52b;
+}
+
 .description a {
   display: flex;
   justify-content: center;
