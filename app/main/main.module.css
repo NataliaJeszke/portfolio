@@ -1,0 +1,48 @@
+.main_cointainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 100px;
+    
+}
+
+.image_cointainer{
+
+}
+
+.text_cointainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+width: 400px;
+height: 500px;
+}
+
+.portfolio_image{
+    background-color: white;
+    transform: scaleX(-1);
+    border-image-slice:
+12 12 12 12;
+border-image-width:
+12px 12px 12px 12px;
+border-image-outset:
+0px 0px 0px 0px;
+border-image-repeat:
+repeat repeat;
+
+border-style:
+solid;
+-webkit-box-shadow: -10px 12px 10px -15px rgba(79, 103, 89, 1);
+-moz-box-shadow: -10px 12px 10px -15px rgba(79, 103, 89, 1);
+box-shadow: -10px 12px 10px -15px rgba(79, 103, 89, 1);
+
+}
+
+
+
+
