@@ -9,12 +9,21 @@
     
 }
 
-.image_cointainer{
-
+.h1{
+    font-size: 80px;
 }
+
+.h3{
+    font-size: 50px
+}
+
+/* .image_cointainer{
+
+} */
 
 .text_cointainer{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;

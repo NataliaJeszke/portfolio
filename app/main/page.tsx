@@ -16,8 +16,8 @@ const Main = () => {
         />
       </div>
       <div className={style.text_cointainer}>
-        <h1>Frontend Developer</h1>
-        <h3>With a bit of fullstack spice!</h3>
+        <h1 className={style.h1}>Frontend Developer</h1>
+        <h3 className={style.h3}>With a bit of fullstack spice!</h3>
 
         <Link href="/projects">Click here to see my projects</Link>
       </div>

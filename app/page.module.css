@@ -78,9 +78,9 @@
   position: relative;
   padding: 4rem 0;
   width: 100%;
-  backdrop-filter: blur(3px) saturate(179%);
-  -webkit-backdrop-filter: blur(3px) saturate(179%);
-  background-color: rgba(243, 230, 211, 0.57);
+  backdrop-filter: blur(4px) saturate(178%);
+  -webkit-backdrop-filter: blur(4px) saturate(178%);
+  background-color: rgba(219, 239, 204, 0.58);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 
