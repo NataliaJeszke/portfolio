@@ -1,4 +1,5 @@
 import { getReposGH } from "../lib/getReposGH";
+import Project from "../project/project";
 
 const Projects = async () => {
   const projects = await getReposGH();
@@ -7,11 +8,9 @@ const Projects = async () => {
   return (
     <div>
       <h1>Projects</h1>
-      {projects.map((project) => (
+      {projects.map((project:Project) => (
         <div key={project.id}>
-          <h2>{project.name}</h2>
-          <h2>{project.html_url}</h2>
-          <h2>{project.homepage}</h2>
+        <Project project={project} />
         </div>
       ))}
     </div>
