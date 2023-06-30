@@ -1,10 +1,12 @@
+import style from "./project.module.css";
+
 interface ProjectProps {
   project: Project;
 }
 
 export default function Project({ project }: ProjectProps) {
   return (
-    <div>
+    <div className={style.project_container}>
       <div>
         <h4>Title</h4>
         <h3>{project.name}</h3>
