@@ -1,16 +1,18 @@
-import { getReposGH } from "../lib/getReposGH";
+import getReposDB from "../lib/getReposDB";
 import Project from "../project/project";
 
-const Projects = async () => {
-  const projects = await getReposGH();
-  console.log(projects);
+interface ProjectsProps {
+  projects: Project[];
+}
 
+const Projects = async ({projects}:ProjectsProps) => {
+  projects = await getReposDB()
   return (
     <div>
       <h1>Projects</h1>
       {projects.map((project:Project) => (
         <div key={project.id}>
-        <Project project={project} />
+          <Project project={project} />
         </div>
       ))}
     </div>
