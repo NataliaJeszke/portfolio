@@ -4,7 +4,7 @@ import Main from "./main/page";
 export default function Home() {
   return (
     <PageWrapper className={undefined}>
-      <Main />;
+      <Main />
     </PageWrapper>
   );
 }

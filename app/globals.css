@@ -56,3 +56,7 @@ background-repeat: no-repeat;
    
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
