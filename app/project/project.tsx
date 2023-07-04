@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 import { PageWrapper } from "../components/page-wrapper";
 import style from "./project.module.css";
 
@@ -8,7 +9,12 @@ interface ProjectProps {
 
 export default function Project({ project }: ProjectProps) {
   return (
-    <PageWrapper className={style.project_container}>
+    <div
+    // initial={{ opacity: 0, x: 20 }}
+    // animate={{ opacity: 1, x: 0, transition : {delay: 0.4}}}
+    // exit={{ opacity: 0, x: 20 }}
+    className={style.project_container}
+    >
       <div>
         <h4>Title</h4>
         <h3>{project.name}</h3>
@@ -29,6 +35,8 @@ export default function Project({ project }: ProjectProps) {
         <h3>Live Deployment</h3>
         <p>{project.liveUrl}</p>
       </div>
-    </PageWrapper>
+    </div>
+      
+
   );
 }

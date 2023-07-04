@@ -1,3 +1,5 @@
+import { PageWrapper } from "../components/page-wrapper";
+import {ProjectsWrapper} from "../components/projects-wrapper";
 import diff from "../lib/diff";
 import getReposDB from "../lib/getReposDB";
 import Project from "../project/project";
@@ -12,16 +14,16 @@ const Projects = async ({projects}:ProjectsProps) => {
 
   const filteredProjects = projects.filter(project => diff.indexOf(project.name) === -1);
   return (
-    <div>
+    <PageWrapper className={undefined}>
       <h1>Projects</h1>
       <div className={style.projects_container}>
-      {filteredProjects.map((project:Project) => (
-        <div key={project.id}>
+      {filteredProjects.map((project:Project, i) => (
+        <ProjectsWrapper key={project.id} className={undefined} i={i}>
           <Project project={project} />
-        </div>
+        </ProjectsWrapper>
       ))}
       </div>    
-    </div>
+    </PageWrapper>
   );
 };
 
