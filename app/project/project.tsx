@@ -1,3 +1,5 @@
+'use client'
+import { PageWrapper } from "../components/page-wrapper";
 import style from "./project.module.css";
 
 interface ProjectProps {
@@ -6,7 +8,7 @@ interface ProjectProps {
 
 export default function Project({ project }: ProjectProps) {
   return (
-    <div className={style.project_container}>
+    <PageWrapper className={style.project_container}>
       <div>
         <h4>Title</h4>
         <h3>{project.name}</h3>
@@ -27,6 +29,6 @@ export default function Project({ project }: ProjectProps) {
         <h3>Live Deployment</h3>
         <p>{project.liveUrl}</p>
       </div>
-    </div>
+    </PageWrapper>
   );
 }
