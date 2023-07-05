@@ -9,8 +9,12 @@ type Project ={
 }
 
 type ProjectRecordGH = {
+    id: string,
     name: string,
     html_url: string,
-    homepage?: string
+    homepage: string,
+    description: string,
+    technologies: string,
+    language: string
 }
 
