@@ -26,7 +26,7 @@ export default function Project({ project, description}: ProjectProps) {
       <div>
         <h3>Description</h3>
         <p>
-          description
+          {description.description}
         </p>
       </div>
       <div>

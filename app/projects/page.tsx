@@ -17,14 +17,13 @@ const Projects = async ({ projects }: ProjectsProps) => {
     (project) => diff.indexOf(project.name) === -1
   );
 
-  const x = await getDescription("chatbot-react");
-  console.log(x);
 
   return (
     <PageWrapper className={undefined}>
       <h1>Projects</h1>
       <div className={style.projects_container}>
         {filteredProjects.map(async (project: ProjectRecordGH, i) => {
+          const x = await getDescription(project.name);
           return x.map(async (description: ProjectDescription) => {
             return (
               <ProjectsWrapper key={project.id} className={undefined} i={i}>
