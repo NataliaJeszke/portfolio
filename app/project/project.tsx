@@ -1,4 +1,5 @@
 import style from "./project.module.css";
+import Image from 'next/image'
 
 interface ProjectProps {
   project: ProjectRecordGH;
@@ -9,6 +10,12 @@ interface ProjectProps {
 export default function Project({ project, description}: ProjectProps) {
   return (
     <div className={style.project_container}>
+       <Image
+      src="https://lcuvljxipgjrwgyoxwzd.supabase.co/storage/v1/object/public/images-portfolio/flights-angular.png"
+      width={200}
+      height={200}
+      alt="Picture of the project"
+    />
       <div>
         <h2 className="font-bold">{project.name}</h2>
       </div>

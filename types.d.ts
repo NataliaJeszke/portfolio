@@ -19,6 +19,7 @@ type ProjectRecordGH = {
 }
 
 type ProjectDescription = {
+    image: string | StaticImport
     technologies?: string,
     description?: string,
 }
