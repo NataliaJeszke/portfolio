@@ -19,8 +19,8 @@ const Projects = async ({ projects }: ProjectsProps) => {
 
 
   return (
-    <PageWrapper className={undefined}>
-      <h1>Projects</h1>
+    <PageWrapper className={style.projects_wrapper}>
+      <h1 className={style.h1}>Projects</h1>
       <div className={style.projects_container}>
         {filteredProjects.map(async (project: ProjectRecordGH, i) => {
           const x = await getDescription(project.name);

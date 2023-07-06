@@ -10,8 +10,7 @@ export default function Project({ project, description}: ProjectProps) {
   return (
     <div className={style.project_container}>
       <div>
-        {/* <h4>Title</h4> */}
-        <h3 className="font-bold">{project.name}</h3>
+        <h2 className="font-bold">{project.name}</h2>
       </div>
       <div>
         <h3>Technologies</h3>
