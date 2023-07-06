@@ -18,3 +18,7 @@ type ProjectRecordGH = {
     language: string
 }
 
+type ProjectDescription = {
+    technologies?: string,
+    description?: string,
+}
