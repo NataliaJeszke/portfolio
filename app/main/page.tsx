@@ -1,9 +1,9 @@
 import portfolio from "../assets/art.jpg";
 import Image from "next/image";
 import style from "./main.module.css";
-import Link from "next/link";
 import Heading3 from "./textMainAnimation/heading3";
 import ButtonProjects from "./buttonProjects/buttonProjects";
+import ButtonsSocial from "./buttonsSocial/buttonsSocial";
 
 const Main = () => {
   return (
@@ -21,6 +21,7 @@ const Main = () => {
         <h1 className={style.h1}>Frontend Developer</h1>
         <Heading3 />
         <ButtonProjects />
+        <ButtonsSocial />
       </div>
     </div>
   );

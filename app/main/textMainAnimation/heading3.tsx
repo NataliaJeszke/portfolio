@@ -7,7 +7,7 @@ export default function Heading3() {
     <motion.h3
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.7 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
       className={style.h3}
     >
       With a bit of fullstack spice!
