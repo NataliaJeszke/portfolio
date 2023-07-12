@@ -1,5 +1,5 @@
+import Link from "next/link";
 import style from "./project.module.css";
-import Image from 'next/image'
 
 interface ProjectProps {
   project: ProjectRecordGH;
@@ -10,12 +10,6 @@ interface ProjectProps {
 export default function Project({ project, description}: ProjectProps) {
   return (
     <div className={style.project_container}>
-       <Image
-      src="https://lcuvljxipgjrwgyoxwzd.supabase.co/storage/v1/object/public/images-portfolio/flights-angular.png"
-      width={200}
-      height={200}
-      alt="Picture of the project"
-    />
       <div>
         <h2 className="font-bold">{project.name}</h2>
       </div>
@@ -37,11 +31,10 @@ export default function Project({ project, description}: ProjectProps) {
       </div>
       <div>
         <h3>GitHub</h3>
-        <p>{project.html_url}</p>
+        <Link href={project.html_url}>Repository</Link>
       </div>
       <div>
-        <h3>Live Deployment</h3>
-        <p>{project.homepage}</p>
+        {project.homepage && <><h3>Deployment</h3> <Link href={project.homepage}>Live Deploy</Link></>}
       </div>
     </div>
   );
