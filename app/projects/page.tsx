@@ -17,10 +17,11 @@ const Projects = async ({ projects }: ProjectsProps) => {
     (project) => diff.indexOf(project.name) === -1
   );
 
-
   return (
     <PageWrapper className={style.projects_wrapper}>
-      <h1 className={style.h1}>Projects</h1>
+      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">
+        Projects
+      </h2>
       <div className={style.projects_container}>
         {filteredProjects.map(async (project: ProjectRecordGH, i) => {
           const x = await getDescription(project.name);
