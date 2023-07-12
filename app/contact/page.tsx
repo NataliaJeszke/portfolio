@@ -71,7 +71,7 @@ const Contact = () => {
               <div className="flex items-center justify-center">
                 <button
                   type="submit"
-                  className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:bg-green-900"
+                  className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:bg-green-900 transition duration-300 ease-in-out"
                 >
                   Send message
                 </button>
