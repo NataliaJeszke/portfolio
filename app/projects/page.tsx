@@ -6,15 +6,12 @@ import { getReposGH } from "../lib/getReposGH";
 import Project from "../project/project";
 import style from "./projects.module.css";
 
-interface ProjectsProps {
-  projects: ProjectRecordGH[];
-}
 
-const Projects = async ({ projects }: ProjectsProps) => {
-  projects = await getReposGH();
+const Projects = async () => {
+  const projects = await getReposGH();
 
   const filteredProjects = projects.filter(
-    (project) => diff.indexOf(project.name) === -1
+    (project: { name: string; }) => diff.indexOf(project.name) === -1
   );
 
   return (
@@ -23,7 +20,7 @@ const Projects = async ({ projects }: ProjectsProps) => {
         Projects
       </h2>
       <div className={style.projects_container}>
-        {filteredProjects.map(async (project: ProjectRecordGH, i) => {
+        {filteredProjects.map(async (project: ProjectRecordGH, i: any) => {
           const x = await getDescription(project.name);
           return x.map(async (description: ProjectDescription) => {
             return (
