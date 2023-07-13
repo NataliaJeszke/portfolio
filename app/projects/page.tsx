@@ -6,9 +6,6 @@ import { getReposGH } from "../lib/getReposGH";
 import Project from "../project/project";
 import style from "./projects.module.css";
 
-interface ProjectsProps {
-  projects: ProjectRecordGH[];
-}
 
 const Projects = async () => {
   const projects = await getReposGH();
