@@ -29,11 +29,6 @@ const Contact = () => {
               className="space-y-8"
               onSubmit={handleSubmit}
             >
-              <input
-                type="hidden"
-                name="_subject"
-                value="New email from Portfolio"
-              />
               <div>
                 <label
                   htmlFor="email"
