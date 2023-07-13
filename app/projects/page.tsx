@@ -7,11 +7,11 @@ import Project from "../project/project";
 import style from "./projects.module.css";
 
 interface ProjectsProps {
-
+  projects: ProjectRecordGH[];
 }
 
 const Projects = async () => {
- const  projects = await getReposGH();
+  const projects = await getReposGH();
 
   const filteredProjects = projects.filter(
     (project: { name: string; }) => diff.indexOf(project.name) === -1
