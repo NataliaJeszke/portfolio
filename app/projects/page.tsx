@@ -1,3 +1,4 @@
+'use client'
 import { PageWrapper } from "../components/page-wrapper";
 import { ProjectsWrapper } from "../components/projects-wrapper";
 import diff from "../lib/diff";
